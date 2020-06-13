@@ -8,8 +8,11 @@ void main() {
 }
 float sqroot(float x,float n) {
     float t;
+    float c;
+    
     t=((x*x)+n)/(2*x);
-    if(t==x)
+    c=((t*t)+n)/(2*t);
+    if(t == x || c == x)
         printf("Square Root:%f\n",t);
     else
         sqroot(t,n);
